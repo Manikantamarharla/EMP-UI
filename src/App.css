@@ -1,0 +1,156 @@
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+form button {
+  grid-column: span 2;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #dbe4ff;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.2);
+}
+
+button {
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.count {
+  text-align: center;
+  margin: 20px 0;
+  color: #374151;
+}
+
+.search-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Employee Card */
+
+.employee-card {
+  background: linear-gradient(
+    135deg,
+    #f8faff,
+    #eef2ff
+  );
+  border-left: 5px solid #4f46e5;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.employee-card:hover {
+  transform: translateY(-4px);
+}
+
+.employee-card h3 {
+  color: #4f46e5;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.employee-card p {
+  margin: 8px 0;
+  color: #4b5563;
+  font-size: 15px;
+}
+
+/* Buttons inside card */
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.update-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #16a34a;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* No Data */
+
+.no-data {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .app-container {
+    padding: 20px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}
